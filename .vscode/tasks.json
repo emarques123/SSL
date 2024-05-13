@@ -8,6 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-std=c2x",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
