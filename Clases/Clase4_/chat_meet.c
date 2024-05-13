@@ -1,4 +1,6 @@
+/*
 int main(int argc,char* argv[])
+
 {
 	FILE* archivo;
 	archivo=fopen("prueba.txt","r+t");
@@ -35,6 +37,7 @@ while((otra=fgetc(archivo))!=EOF){
 		printf("%c",otra);
 	}
 =======
+*/
 int main(int argc,char* argv[])
 {
 	FILE* archivo;
@@ -43,7 +46,7 @@ int main(int argc,char* argv[])
 	char bufferL[10];
 /*	fputs(buffer,archivo);
 	fclose(archivo);*/
-	
+/*	
 	archivo=fopen("prueba.txt","r+t");
 	printf("%s \n",fgets(bufferL,9,archivo));
 	printf("%s",bufferL);
@@ -52,7 +55,7 @@ int main(int argc,char* argv[])
 }
 
 =========
-
+*/
 typedef struct {
 		int a;
 		int b;
