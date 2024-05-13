@@ -38,13 +38,14 @@ while((otra=fgetc(archivo))!=EOF){
 	}
 =======
 */
+/*
 int main(int argc,char* argv[])
 {
 	FILE* archivo;
 	//archivo=fopen("prueba.txt","r+t");
 	char buffer[10]="123456789";
 	char bufferL[10];
-/*	fputs(buffer,archivo);
+	fputs(buffer,archivo);
 	fclose(archivo);*/
 /*	
 	archivo=fopen("prueba.txt","r+t");
@@ -56,6 +57,8 @@ int main(int argc,char* argv[])
 
 =========
 */
+
+/*
 typedef struct {
 		int a;
 		int b;
@@ -79,3 +82,4 @@ int main(int argc,char* argv[])
 	fclose(archivo);
 	return 0;
 }
+*/
