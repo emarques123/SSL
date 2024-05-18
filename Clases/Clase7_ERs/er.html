@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<meta charset="UTF-8"> 
+<head>
+    <title>ER DE PRUEBA</title>
+	<script language="javascript">
+
+		function expresionregular(){   //como java no es FUERTEMENTE TIPADO no se declara el tipo de dato que retorna la funcion (podria cambiar en tiempo de ejecucion)
+			var texto=document.getElementById("nombre").value; //funcion de biblioteca javascript que trae un elemento por id, 
+		    let ER = /^[0-9][0-9]*([.,][0-9]+)?$/;   // "/^  $/" = que coincida TODO,  "/   /" = que coincida algo
+			/*	Validacion nros reales:
+			#1 (\d)+(,|.)?(\d)  			podria terminar un numero en punto o coma, está mal
+			#2 (\d)+((,|.)?(\d)+)?(\d)*    	esta funciona mejor, si pongo punto o coma, requiere un numero mas
+			#3 [0-9][0-9]*([.,][0-9]+)?    	parecida a resolucion profesora, mas legible que #2
+
+			*/
+			document.getElementById("resultado").innerHTML =ER.test(texto);  //innerHTML parecido al .value de "nombre" pero es una especie de etiqueta 
+			//alert(ER.test(texto));
+		}
+
+	</script>
+</head>
+<body>
+<h3>JUGUEMOS CON EXPRESIONES REGULARES</h3> <!-- h3, h2, h1 letras mas grandes-->
+   
+
+    <form id="form1">
+
+        CADENA DE PRUEBA:<br /><br /> <!-- <br /> tag "unario" que no lleva cierre, baja una linea el texto que sigue -->
+		<input type="text" name="nombre" value="" id="nombre" class="formulario">
+ 
+
+
+    </form>
+	<hr /> <!-- agrega una linea, tag unario-->>
+    <input type="button" value="Verificar ER" onclick="expresionregular()"> <!-- EVENTO al clickear: invoca la funcion "expresion.." -->
+	<!--<br /> -->
+    RESULTADO:<div id="resultado"></div>
+	<hr />
+	<!-- comentario -->
+	Hola Mundo HTML!
+
+</body>
+</html>
